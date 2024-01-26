@@ -46,9 +46,6 @@
             <li><a class="dropdown-item" href="?page=modelo-cadastrar">Cadastrar</a></li>
           </ul>
         </li>
-<!-- -----------------------------------------------------
-     ABA SEARCH DO NAVBAR
-     ----------------------------------------------------- -->
       </ul>
     </div>
   </div>
