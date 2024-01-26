@@ -4,6 +4,7 @@
     $res = $conn->query($sql);
     $row = $res->fetch_object();
 ?>
+<h1>Testando novamente agora</h1>
 <form action="?page=marca-salvar" method="POST">
     <input type="hidden" name="acao" value="editar">
     <input type="hidden" name="id_marca" value="<?php echo $row->id_marca; ?>">
