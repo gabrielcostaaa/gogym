@@ -1,8 +1,8 @@
-<h1>Cadastrar Marca</h1>
+<h1>Cadastrar Aluno</h1>
 <form action="?page=marca-salvar" method="POST">
     <input type="hidden" name="acao" value="cadastrar">
     <div class="mb-3">
-        <label>Nome da Marca</label>
+        <label>Nome do Aluno</label>
         <input type="text" name="nome_marca" class="form-control">
     </div>
     <div class="mb-3">

@@ -7,9 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
-<!-- -----------------------------------------------------
-     TOPO E TÍTULO CARROS DO NAVBAR
-     ----------------------------------------------------- -->
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php">GoGym - Controle de Treinamentos</a>
@@ -22,21 +20,17 @@
           <a class="nav-link active" aria-current="page" href="index.php">Início</a>
         </li>
 
-<!-- -----------------------------------------------------
-     ALUNOS NO NAVBAR
-     ----------------------------------------------------- -->
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Alunos
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="?page=marca-listar">Listar</a></li>
-            <li><a class="dropdown-item" href="?page=marca-cadastrar">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="?page=aluno-cadastrar">Cadastrar</a></li>
           </ul>
         </li>
-<!-- -----------------------------------------------------
-     MODELOS NO NAVBAR
-     ----------------------------------------------------- -->      
+  
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Exercícios
@@ -66,8 +60,8 @@
             include('marca-listar.php');
             break;
 
-          case 'marca-cadastrar':
-            include('marca-cadastrar.php');
+          case 'aluno-cadastrar':
+            include('aluno-cadastrar.php');
             break;
 
           case 'marca-editar':
