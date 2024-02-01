@@ -1,6 +1,6 @@
 <h1>Alunos</h1>
     <?php 
-        $sql = "SELECT * FROM marca";
+        $sql = "SELECT * FROM aluno";
         $res = $conn -> query($sql);
         $qtd = $res->num_rows;
 
@@ -13,10 +13,10 @@
             echo "<th scope='col'>Ações</th>";
             while($row = $res->fetch_object()){
                 echo "<tr>";
-                echo "<td>".$row->id_marca."</td>";
-                echo "<td>".$row->nome_marca."</td>";
+                echo "<td>".$row->alu_codigo."</td>";
+                echo "<td>".$row->alu_nome."</td>";
                 echo "<td>
-                        <button onclick=\"location.href='?page=marca-editar&id_marca=".$row->id_marca."';\"class='btn btn-primary'>Editar</button>
+                        <button onclick=\"location.href='?page=aluno-editar&alu_codigo=".$row->alu_codigo."';\"class='btn btn-primary'>Editar</button>
                         <button class='btn btn-danger'>Excluir</button>
                     </td>";
                 echo "</tr>";

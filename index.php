@@ -26,7 +26,7 @@
             Alunos
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="?page=marca-listar">Listar</a></li>
+            <li><a class="dropdown-item" href="?page=aluno-listar">Listar</a></li>
             <li><a class="dropdown-item" href="?page=aluno-cadastrar">Cadastrar</a></li>
           </ul>
         </li>
@@ -56,20 +56,20 @@
         // INCLUDE DAS PÁGINAS
         switch (@$_REQUEST['page']) {
           //MARCAS
-          case 'marca-listar':
-            include('marca-listar.php');
+          case 'aluno-listar':
+            include('aluno-listar.php');
             break;
 
           case 'aluno-cadastrar':
             include('aluno-cadastrar.php');
             break;
 
-          case 'marca-editar':
-            include('marca-editar.php');
+          case 'aluno-editar':
+            include('aluno-editar.php');
             break;
           
-          case 'marca-salvar':
-            include('marca-salvar.php');
+          case 'aluno-salvar':
+            include('aluno-salvar.php');
             break;
 
           //MODELOS
@@ -93,7 +93,7 @@
             <div class="container">
             <div class="row">
               <div class="col-sm">
-              <a href="?page=marca-listar"><button type="button" class="btn btn-info btn-lg" style="height: 150px; width: 200px;">Alunos</button></a>
+              <a href="?page=aluno-listar"><button type="button" class="btn btn-info btn-lg" style="height: 150px; width: 200px;">Alunos</button></a>
               </div>
               <div class="col-sm">
                 <button type="button" class="btn btn-info btn-lg" style="height: 150px; width: 200px;">Exercícios</button>

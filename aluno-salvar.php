@@ -2,10 +2,10 @@
     <?php 
         switch ($_REQUEST['acao']) {
             case 'cadastrar':
-                $sql = "INSERT INTO marca 
-                            (nome_marca) 
+                $sql = "INSERT INTO aluno 
+                            (alu_nome) 
                         VALUES 
-                            ('".$_POST['nome_marca']."')";
+                            ('".$_POST['nome_aluno']."')";
                 $res = $conn->query($sql);
                 
                 // ALERTA USUÁRIO SE DEU CERTO O REGISTRO OU NÃO
@@ -19,10 +19,10 @@
                 break;
                 
             case 'editar':
-                $sql = "UPDATE marca SET 
-                nome_marca='" . $_POST["nome_marca"] . "'
+                $sql = "UPDATE aluno SET 
+                alu_nome='" . $_POST["alu_nome"] . "'
               WHERE 
-                id_marca=" . $_POST["id_marca"];
+                alu_codigo=" . $_POST["alu_codigo"];
                 $res = $conn->query($sql);
 
                 // ALERTA USUÁRIO SE DEU CERTO A EDIÇÃO OU NÃO
