@@ -55,7 +55,7 @@
 
         // INCLUDE DAS PÁGINAS
         switch (@$_REQUEST['page']) {
-          //MARCAS
+          //ALUNOS
           case 'aluno-listar':
             include('aluno-listar.php');
             break;
@@ -72,20 +72,20 @@
             include('aluno-salvar.php');
             break;
 
-          //MODELOS
-          case 'modelo-listar':
-            include('modelo-listar.php');
+          //EXERCÍCIOS
+          case 'exercicio-listar':
+            include('exercicio-listar.php');
             break;
 
-          case 'modelo-cadastrar':
-            include('modelo-cadastrar.php');
+          case 'exercicio-cadastrar':
+            include('exercicio-cadastrar.php');
             break;
 
-          case 'modelo-editar':
-            include('modelo-editar.php');
+          case 'exercicio-editar':
+            include('exercicio-editar.php');
           
-          case 'modelo-salvar':
-            include('modelo-salvar.php');
+          case 'exercicio-salvar':
+            include('exercicio-salvar.php');
             break;
 
           default:
@@ -96,10 +96,13 @@
               <a href="?page=aluno-listar"><button type="button" class="btn btn-info btn-lg" style="height: 150px; width: 200px;">Alunos</button></a>
               </div>
               <div class="col-sm">
-                <button type="button" class="btn btn-info btn-lg" style="height: 150px; width: 200px;">Exercícios</button>
+              <a href="?page=exercicio-listar"><button type="button" class="btn btn-info btn-lg" style="height: 150px; width: 200px;">Exercícios</button></a>
               </div>
               <div class="col-sm">
               <button type="button" class="btn btn-info btn-lg" style="height: 150px; width: 200px;">Treinos</button>
+              </div>
+              <div class="col-sm">
+              <button type="button" class="btn btn-info btn-lg" style="height: 150px; width: 200px;">Avaliações</button>
               </div>
             </div>
           </div>';

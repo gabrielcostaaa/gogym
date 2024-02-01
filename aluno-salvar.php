@@ -1,4 +1,4 @@
-<h1>Salvar Marca</h1>
+<h1>Salvar Aluno</h1>
     <?php 
         switch ($_REQUEST['acao']) {
             case 'cadastrar':
@@ -28,7 +28,7 @@
                 // ALERTA USUÁRIO SE DEU CERTO A EDIÇÃO OU NÃO
                 if($res==true){
                     echo "<script>alert('Editado com sucesso!')</script>";
-                    echo "<script>location.href='?page=marca-listar';</script>";
+                    echo "<script>location.href='?page=aluno-listar';</script>";
                 } else {
                     echo "<script>alert('Não foi possível')</script>";
                 }
