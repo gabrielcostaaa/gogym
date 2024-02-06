@@ -92,17 +92,17 @@
             echo ' 
             <div class="container">
             <div class="row">
-              <div class="col-sm">
-              <a href="?page=aluno-listar"><button type="button" class="btn btn-info btn-lg" style="height: 150px; width: 200px;">Alunos</button></a>
+              <div class="col-sm-6 col-lg m-3">
+              <a href="?page=aluno-listar"><button type="button" class="btn btn-info btn-lg" style="height: 100px; width: 200px;">Alunos</button></a>
               </div>
-              <div class="col-sm">
-              <a href="?page=exercicio-listar"><button type="button" class="btn btn-info btn-lg" style="height: 150px; width: 200px;">Exercícios</button></a>
+              <div class="col-sm-6 col-lg m-3">
+              <a href="?page=exercicio-listar"><button type="button" class="btn btn-info btn-lg" style="height: 100px; width: 200px;">Exercícios</button></a>
               </div>
-              <div class="col-sm">
-              <button type="button" class="btn btn-info btn-lg" style="height: 150px; width: 200px;">Treinos</button>
+              <div class="col-sm-6 col-lg m-3">
+              <button type="button" class="btn btn-info btn-lg" style="height: 100px; width: 200px;">Treinos</button>
               </div>
-              <div class="col-sm">
-              <button type="button" class="btn btn-info btn-lg" style="height: 150px; width: 200px;">Avaliações</button>
+              <div class="col-sm-6 col-lg m-3">
+              <button type="button" class="btn btn-info btn-lg" style="height: 100px; width: 200px;">Avaliações</button>
               </div>
             </div>
           </div>';
