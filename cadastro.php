@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de login</title>
+    <title>Tela de Cadastro</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -15,7 +15,7 @@
             outline: none;
             font-size: 15px;
         }
-        .tela-login{
+        .tela-cadastro{
             background-color: rgba(0, 0, 0, 0.8);
             position: absolute;
             top: 50%;
@@ -41,13 +41,18 @@
     </style>
 </head>
 <body>
-    <div class="tela-login">
-        <h1>Login</h1>
-        <input type="text" placeholder="Nome">
-        <br><br>
-        <input type="password" placeholder="Senha">
-        <br><br>
-        <button>Enviar</button>
-    </div>
+    <form action="cadastro.php" method="POST">
+        <div class="tela-cadastro">
+            <h1>Cadastro</h1>
+            <input type="text" name="nome" id="nome" placeholder="Nome">
+            <br><br>
+            <input type="email" name="email" id="email"  placeholder="Email">
+            <br><br>
+            <input type="password" name="senha" id="senha" placeholder="Senha">
+            <br><br>
+            <button>Cadastrar</button>
+            <p>Já tem uma conta? <a href="login.php">Faça login</a></p>
+        </div>
+    </form>
 </body>
 </html>
