@@ -1,4 +1,5 @@
 <?php 
+session_start();
 
 if(isset($_POST['submit']) && !empty($_POST['nome']) && !empty($_POST['senha'])){
     include_once('config.php');
@@ -10,9 +11,13 @@ if(isset($_POST['submit']) && !empty($_POST['nome']) && !empty($_POST['senha']))
     $result = $conn->query($sql);
 
     if($result->num_rows > 0){
+        $_SESSION['nome'] = $nome;
+        $_SESSION['senha'] = $senha;
         header('Location: index.php');
     } else {
-        echo 'Usuário ou senha inválidos';
+        unset($_SESSION['nome']);
+        unset($_SESSION['senha']);
+        header('Location: login.php');
     }
 } else {
     header('Location: login.php');

@@ -1,3 +1,14 @@
+<?php 
+    session_start();
+    
+    if(!isset($_SESSION['nome']) && !isset($_SESSION['senha'])){
+        unset($_SESSION['nome']);
+        unset($_SESSION['senha']);
+        header('Location: login.php');
+    }
+    echo "Bem vindo ".$_SESSION['nome'];
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

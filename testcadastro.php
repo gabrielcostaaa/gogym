@@ -10,7 +10,7 @@ if(isset($_POST['submit']) && !empty($_POST['nome']) && !empty($_POST['email']) 
 
     $result = $conn->query($sql);
 
-    print_r($result);
+    header('Location: login.php');
 } else {
     header('Location: login.php');
 }
