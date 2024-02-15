@@ -1,11 +1,3 @@
-<?php 
-
-if(isset($_POST['submit'])){
-    print_r($_POST['nome']);
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,7 +9,7 @@ if(isset($_POST['submit'])){
             font-family: Arial, Helvetica, sans-serif;
             background-image: linear-gradient(45deg, rgb(141, 212, 230), rgb(195, 228, 225));
         }
-        input{
+        .caixaInput{
             padding: 15px;
             border: none;
             outline: none;
@@ -34,7 +26,7 @@ if(isset($_POST['submit'])){
             border-radius: 15px;
             color: white;
         }
-        button{
+        .inputSubmit{
             background-color: dodgerblue;
             border: none;
             padding: 15px;
@@ -43,23 +35,23 @@ if(isset($_POST['submit'])){
             color: white;
             font-size: 15px;
         }
-        button:hover{
+        .inputSubmit:hover{
             background-color: deepskyblue;
             cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <form action="login.php" method="POST">
-        <div class="tela-login">
+    <div class="tela-login">
+        <form action="testlogin.php" method="POST">
             <h1>Login</h1>
-            <input type="text" name="nome" id="nome" placeholder="Nome">
+            <input class="caixaInput" type="text" name="nome" id="nome" placeholder="Nome">
             <br><br>
-            <input type="password" name="senha" id="senha" placeholder="Senha">
+            <input class="caixaInput" type="password" name="senha" id="senha" placeholder="Senha">
             <br><br>
-            <button>Entrar</button>
+            <input class="inputSubmit" type="submit" name="submit" value="Enviar">
             <p>Não tem uma conta? <a href="cadastro.php">Faça o cadastro</a></p>
-        </div>
-    </form>
+        </form>
+    </div>
 </body>
 </html>
