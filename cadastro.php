@@ -25,7 +25,7 @@
             border-radius: 15px;
             color: white;
         }
-        button{
+        .inputSubmit{
             background-color: dodgerblue;
             border: none;
             padding: 15px;
@@ -34,24 +34,25 @@
             color: white;
             font-size: 15px;
         }
-        button:hover{
+        .inputSubmit:hover{
             background-color: deepskyblue;
             cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <form action="cadastro.php" method="POST">
         <div class="tela-cadastro">
-            <h1>Cadastro</h1>
-            <input type="text" name="nome" id="nome" placeholder="Nome">
-            <br><br>
-            <input type="email" name="email" id="email"  placeholder="Email">
-            <br><br>
-            <input type="password" name="senha" id="senha" placeholder="Senha">
-            <br><br>
-            <button>Cadastrar</button>
-            <p>Já tem uma conta? <a href="login.php">Faça login</a></p>
+            <form action="testcadastro.php" method="POST">
+                <h1>Cadastro</h1>
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+                <br><br>
+                <input type="email" name="email" id="email"  placeholder="Email">
+                <br><br>
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+                <br><br>
+                <input class="inputSubmit" type="submit" name="submit" value="Cadastrar">
+                <p>Já tem uma conta? <a href="login.php">Faça login</a></p>
+            </form>
         </div>
     </form>
 </body>

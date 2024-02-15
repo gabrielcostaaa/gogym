@@ -9,7 +9,11 @@ if(isset($_POST['submit']) && !empty($_POST['nome']) && !empty($_POST['senha']))
 
     $result = $conn->query($sql);
 
-    print_r($result);
+    if($result->num_rows > 0){
+        header('Location: index.php');
+    } else {
+        echo 'Usuário ou senha inválidos';
+    }
 } else {
     header('Location: login.php');
 }
