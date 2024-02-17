@@ -7,7 +7,7 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(45deg, rgb(141, 212, 230), rgb(195, 228, 225));
+            background-color: #DDFE8E;
         }
         input{
             padding: 15px;
@@ -16,7 +16,7 @@
             font-size: 15px;
         }
         .tela-cadastro{
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.9);
             position: absolute;
             top: 50%;
             left: 50%;
@@ -26,16 +26,16 @@
             color: white;
         }
         .inputSubmit{
-            background-color: dodgerblue;
+            background-color: #DDFE8E;
             border: none;
             padding: 15px;
             width: 100%;
             border-radius: 10px;
-            color: white;
+            color: black;
             font-size: 15px;
         }
         .inputSubmit:hover{
-            background-color: deepskyblue;
+            background-color: #92AF4D;
             cursor: pointer;
         }
     </style>
@@ -43,8 +43,9 @@
 <body>
         <div class="tela-cadastro">
             <form action="testcadastro.php" method="POST">
-                <h1>Cadastro</h1>
-                <input type="text" name="nome" id="nome" placeholder="Nome">
+                <img src="img/GoGymNavbar.png" alt="GoGym" width="128" height="44">
+                <h2>Cadastro</h2>
+                <input type="text" name="nome" id="nome" placeholder="Nome de usuário">
                 <br><br>
                 <input type="email" name="email" id="email"  placeholder="Email">
                 <br><br>

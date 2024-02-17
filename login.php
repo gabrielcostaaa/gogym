@@ -46,7 +46,7 @@
         <form action="testlogin.php" method="POST">
             <img src="img/GoGymNavbar.png" alt="GoGym" width="128" height="44">
             <h2>Login</h2>
-            <input class="caixaInput" type="text" name="nome" id="nome" placeholder="Nome">
+            <input class="caixaInput" type="text" name="nome" id="nome" placeholder="Nome de usuário">
             <br><br>
             <input class="caixaInput" type="password" name="senha" id="senha" placeholder="Senha">
             <br><br>

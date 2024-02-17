@@ -6,7 +6,6 @@
         unset($_SESSION['senha']);
         header('Location: login.php');
     }
-    echo "Bem vindo ".$_SESSION['nome'];
 ?>
 
 <!DOCTYPE html>
@@ -32,9 +31,10 @@
           <li><a href="#" class="nav-link px-2 text-white">Treinos</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Avaliações</a></li>
         </ul>
+        <?php echo "Olá, ".$_SESSION['nome'];?>
         <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn" style="background-color: #DDFE8E;">Cadastro</button>
+          <button onclick="location.href='login.php'" type="button" class="btn btn-outline-light ms-5 me-2">Login</button>
+          <button onclick="location.href='cadastro.php'" type="button" class="btn" style="background-color: #DDFE8E;">Cadastro</button>
         </div>
       </div>
     </div>
@@ -84,23 +84,7 @@
             break;
 
           default:
-            echo ' 
-            <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-lg m-3">
-              <a href="?page=aluno-listar"><button type="button" class="btn btn-info btn-lg" style="height: 100px; width: 200px;">Alunos</button></a>
-              </div>
-              <div class="col-sm-6 col-lg m-3">
-              <a href="?page=exercicio-listar"><button type="button" class="btn btn-info btn-lg" style="height: 100px; width: 200px;">Exercícios</button></a>
-              </div>
-              <div class="col-sm-6 col-lg m-3">
-              <button type="button" class="btn btn-info btn-lg" style="height: 100px; width: 200px;">Treinos</button>
-              </div>
-              <div class="col-sm-6 col-lg m-3">
-              <button type="button" class="btn btn-info btn-lg" style="height: 100px; width: 200px;">Avaliações</button>
-              </div>
-            </div>
-          </div>';
+
 
             break;
         }
