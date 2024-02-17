@@ -7,7 +7,7 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(45deg, rgb(141, 212, 230), rgb(195, 228, 225));
+            background-color: #DDFE8E;
         }
         .caixaInput{
             padding: 15px;
@@ -17,7 +17,7 @@
             width: 88%;
         }
         .tela-login{
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.9);
             position: absolute;
             top: 50%;
             left: 50%;
@@ -27,16 +27,16 @@
             color: white;
         }
         .inputSubmit{
-            background-color: dodgerblue;
+            background-color: #DDFE8E;
             border: none;
             padding: 15px;
             width: 100%;
             border-radius: 10px;
-            color: white;
+            color: black;
             font-size: 15px;
         }
         .inputSubmit:hover{
-            background-color: deepskyblue;
+            background-color: #92AF4D;
             cursor: pointer;
         }
     </style>
@@ -44,7 +44,8 @@
 <body>
     <div class="tela-login">
         <form action="testlogin.php" method="POST">
-            <h1>Login</h1>
+            <img src="img/GoGymNavbar.png" alt="GoGym" width="128" height="44">
+            <h2>Login</h2>
             <input class="caixaInput" type="text" name="nome" id="nome" placeholder="Nome">
             <br><br>
             <input class="caixaInput" type="password" name="senha" id="senha" placeholder="Senha">

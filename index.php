@@ -34,7 +34,7 @@
         </ul>
         <div class="text-end">
           <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-danger">Cadastro</button>
+          <button type="button" class="btn" style="background-color: #DDFE8E;">Cadastro</button>
         </div>
       </div>
     </div>
