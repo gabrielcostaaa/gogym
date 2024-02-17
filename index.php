@@ -15,46 +15,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoGym</title>
+    <link rel="shortcut icon" href="img/favicon-gogym.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.php">GoGym - Controle de Treinamentos</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">Início</a>
-        </li>
-
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Alunos
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="?page=aluno-listar">Listar</a></li>
-            <li><a class="dropdown-item" href="?page=aluno-cadastrar">Cadastrar</a></li>
-          </ul>
-        </li>
-  
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Exercícios
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="?page=modelo-listar">Listar</a></li>
-            <li><a class="dropdown-item" href="?page=modelo-cadastrar">Cadastrar</a></li>
-          </ul>
-        </li>
-      </ul>
+<header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-center">
+      <a href="index.php">
+      <img src="img/GoGymNavbar.png" alt="GoGym" width="128" height="44">
+      </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="?page=aluno-listar" class="nav-link px-2 text-white">Alunos</a></li>
+          <li><a href="?page=exercicio-listar" class="nav-link px-2 text-white">Exercícios</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Treinos</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Avaliações</a></li>
+        </ul>
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn btn-danger">Cadastro</button>
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
+  </header>
 
 <div class="container mt-3">
   <div class="row">

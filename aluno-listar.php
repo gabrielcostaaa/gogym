@@ -23,6 +23,7 @@
             }
             echo "</thead>";
             echo "</table>";
+            echo "<button onclick=\"location.href='?page=aluno-cadastrar'\" class='btn btn-primary'>Cadastrar Aluno</button>";
         } else {
             echo "Não encontrou resultado";
         }
