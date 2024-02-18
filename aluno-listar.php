@@ -10,11 +10,13 @@
             echo "<thead>";
             echo "<th scope='col'>Id</th>";
             echo "<th scope='col'>Nome</th>";
+            echo "<th scope='col'>Idade</th>";
             echo "<th scope='col'>Ações</th>";
             while($row = $res->fetch_object()){
                 echo "<tr>";
                 echo "<td>".$row->alu_codigo."</td>";
                 echo "<td>".$row->alu_nome."</td>";
+                echo "<td>".$row->alu_idade."</td>";
                 echo "<td>
                         <button onclick=\"location.href='?page=aluno-editar&alu_codigo=".$row->alu_codigo."';\"class='btn btn-primary'>Editar</button>
                         <button class='btn btn-danger'>Excluir</button>
