@@ -14,6 +14,7 @@ Sistema para controle personalizado de treinamentos. Ele permite que os usuário
 
 ## Tecnologias Utilizadas
 
+<code><img width="40px" src="https://devicon-website.vercel.app/api/laravel/plain-wordmark.svg" title = "LARAVEL"/></code>
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" title = "HTML5"/></code>
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" title = "CSS3"/></code>
 <code><img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title = "JAVASCRIPT"/></code>
